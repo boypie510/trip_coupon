@@ -5,4 +5,5 @@ class CouponsController < ApplicationController
   end
 
   
+  
 end

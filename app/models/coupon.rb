@@ -1,3 +1,3 @@
 class Coupon < ApplicationRecord
-  validates :name, presence: true
+  validates :name ,:id_card , :mobile, presence: true
 end
