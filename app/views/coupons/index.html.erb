@@ -1,0 +1,14 @@
+<h1> coupon </h1>
+
+<%= form_for @coupon do |f|%> 
+  <%= f.label :name%> 
+  <%= f.text_field :name%>
+  <br>
+  <%= f.label :id_card%> 
+  <%= f.text_field :id_card%>
+  <br>
+  <%= f.label :mobile%> 
+  <%= f.text_field :mobile%>
+  <br>
+  <%= f.submit %>
+<% end %>

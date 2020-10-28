@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_28_073930) do
+ActiveRecord::Schema.define(version: 2020_10_28_074240) do
+
+  create_table "coupons", force: :cascade do |t|
+    t.string "name"
+    t.string "id_card"
+    t.string "mobile"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "models", force: :cascade do |t|
     t.string "email", default: "", null: false
